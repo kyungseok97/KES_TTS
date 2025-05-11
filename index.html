@@ -64,45 +64,43 @@ Text-to-Speech (TTS) plays a crucial role in advancing human-computer communicat
     Emotion: Neutral
   </div>
 
-  <!-- 열 제목 (텍스트만) -->
-  <div style="display: flex; justify-content: center; gap: 60px; margin-bottom: 5px;">
-    <div style="text-align: center; width: 180px; font-weight: bold;">Recording</div>
-    <div style="text-align: center; width: 180px; font-weight: bold;">Emospeech</div>
-    <div style="text-align: center; width: 180px; font-weight: bold;">KES-TTS</div>
+  <!-- 열 제목 (텍스트 헤더) -->
+  <div style="display: flex; align-items: center; gap: 60px; margin-left: 170px; margin-bottom: 5px;">
+    <div style="width: 180px; text-align: center; font-weight: bold;">Recording</div>
+    <div style="width: 180px; text-align: center; font-weight: bold;">Emospeech</div>
+    <div style="width: 180px; text-align: center; font-weight: bold;">KES-TTS</div>
   </div>
 
-  <!-- 오디오 + 샘플 텍스트 -->
-  <div style="display: flex; justify-content: center; gap: 60px; align-items: flex-start;">
+  <!-- Sample 텍스트 + 오디오들 -->
+  <div style="display: flex; align-items: center; gap: 60px;">
 
-    <!-- Recording 열 -->
-    <div style="display: flex; flex-direction: column; align-items: center; width: 180px;">
-      <div style="font-weight: bold; white-space: nowrap; margin-bottom: 4px;">
-        Sample 1: <span style="font-style: italic; font-weight: normal;">“~~~”</span>
-      </div>
+    <!-- Sample 1 텍스트 -->
+    <div style="white-space: nowrap; font-weight: bold;">
+      Sample 1: <span style="font-style: italic; font-weight: normal;">“~~~”</span>
+    </div>
+
+    <!-- Recording 오디오 -->
+    <div style="display: flex; flex-direction: column; align-items: center;">
       <audio controls style="width: 180px;">
         <source src="Samples/ETTS/Neutral/Sample1/Recording.wav" type="audio/wav">
       </audio>
     </div>
 
-    <!-- Emospeech 열 -->
-    <div style="display: flex; flex-direction: column; align-items: center; width: 180px;">
-      <div style="height: 24px;"></div> <!-- 빈 줄 (Sample 1 없음) -->
+    <!-- Emospeech 오디오 -->
+    <div style="display: flex; flex-direction: column; align-items: center;">
       <audio controls style="width: 180px;">
         <source src="Samples/ETTS/Neutral/Sample1/Emospeech.wav" type="audio/wav">
       </audio>
     </div>
 
-    <!-- KES-TTS 열 -->
-    <div style="display: flex; flex-direction: column; align-items: center; width: 180px;">
-      <div style="height: 24px;"></div> <!-- 빈 줄 (Sample 1 없음) -->
+    <!-- KES-TTS 오디오 -->
+    <div style="display: flex; flex-direction: column; align-items: center;">
       <audio controls style="width: 180px;">
         <source src="Samples/ETTS/Neutral/Sample1/Ours.wav" type="audio/wav">
       </audio>
     </div>
 
   </div>
-
-</div>
 
 </div>
       
