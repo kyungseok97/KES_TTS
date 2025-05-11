@@ -55,37 +55,31 @@ Text-to-Speech (TTS) plays a crucial role in advancing human-computer communicat
     </div>
 
     <div class="container">
-    <h2 style="text-align: center;">Emotional Speech Synthesis</h2>
+<h2 style="text-align: center;">Emotional Speech Synthesis</h2>
 
-<!-- 열 헤더 줄 -->
-<div style="display: flex; align-items: center; gap: 50px; margin-left: 150px; margin-bottom: 10px;">
-  <div style="width: 150px; font-weight: bold;">Emotion: Neutral</div>
-  <div style="text-align: center; font-weight: bold;">Recording</div>
-  <div style="text-align: center; font-weight: bold;">Emospeech</div>
-  <div style="text-align: center; font-weight: bold;">KES-TTS</div>
+<!-- Emotion 라벨 (Recording 위 한 줄) -->
+<div style="margin-left: 150px; font-weight: bold; margin-bottom: 5px;">
+  Emotion: Neutral
 </div>
 
-<!-- Sample 1 줄 -->
-<div style="display: flex; align-items: center; gap: 50px; margin-left: 150px; margin-bottom: 20px;">
-  <!-- 한 줄로 고정된 텍스트 -->
-  <div style="width: 150px; white-space: nowrap;">
+<!-- 열 제목 줄 -->
+<div style="display: flex; gap: 40px; margin-left: 230px; margin-bottom: 10px;">
+  <div style="width: 180px; text-align: center; font-weight: bold;">Recording</div>
+  <div style="width: 180px; text-align: center; font-weight: bold;">Emospeech</div>
+  <div style="width: 180px; text-align: center; font-weight: bold;">KES-TTS</div>
+</div>
+
+<!-- Sample 1: 텍스트 + 오디오 줄 -->
+<div style="display: flex; gap: 40px; align-items: flex-start; margin-left: 150px;">
+  <!-- Sample 텍스트 -->
+  <div style="width: 180px; white-space: nowrap;">
     <strong>Sample 1:</strong> <span style="font-style: italic;">“~~~”</span>
   </div>
 
-  <!-- 오디오 1 -->
-  <audio controls style="width: 180px;">
-    <source src="Samples/ETTS/Neutral/Sample1/Recording.wav" type="audio/wav">
-  </audio>
-
-  <!-- 오디오 2 -->
-  <audio controls style="width: 180px;">
-    <source src="Samples/ETTS/Neutral/Sample1/Emospeech.wav" type="audio/wav">
-  </audio>
-
-  <!-- 오디오 3 -->
-  <audio controls style="width: 180px;">
-    <source src="Samples/ETTS/Neutral/Sample1/Ours.wav" type="audio/wav">
-  </audio>
+  <!-- 오디오 플레이어들 -->
+  <div><audio controls style="width: 180px;"><source src="Samples/ETTS/Neutral/Sample1/Recording.wav" type="audio/wav"></audio></div>
+  <div><audio controls style="width: 180px;"><source src="Samples/ETTS/Neutral/Sample1/Emospeech.wav" type="audio/wav"></audio></div>
+  <div><audio controls style="width: 180px;"><source src="Samples/ETTS/Neutral/Sample1/Ours.wav" type="audio/wav"></audio></div>
 </div>
       
   </body>
