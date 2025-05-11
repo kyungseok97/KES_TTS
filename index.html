@@ -56,43 +56,33 @@ Text-to-Speech (TTS) plays a crucial role in advancing human-computer communicat
 
     <div class="container">
     <h2 style="text-align: center;">Emotional Speech Synthesis</h2>
-    
-    <!-- 상단 라벨 영역 -->
-    <div style="display: flex; align-items: center; margin-left: 60px; gap: 50px; font-weight: bold; margin-bottom: 10px;">
-<!-- 전체 그리드 -->
-<div style="display: grid; grid-template-columns: 150px 150px 150px 150px; gap: 20px; align-items: center; margin-left: 60px;">
 
-  <!-- 첫 번째 줄: Neutral only -->
-  <h3 style="font-weight: bold; white-space: nowrap; margin: 0;">Emotion: Neutral</h3>
-  <div></div>
-  <div></div>
-  <div></div>
+<!-- 열 헤더 줄 -->
+<div style="display: flex; align-items: center; gap: 50px; margin-left: 150px; margin-bottom: 10px;">
+  <div style="width: 150px; font-weight: bold;">Emotion: Neutral</div>
+  <div style="text-align: center; font-weight: bold;">Recording</div>
+  <div style="text-align: center; font-weight: bold;">Emospeech</div>
+  <div style="text-align: center; font-weight: bold;">KES-TTS</div>
+</div>
 
-<!-- 두 번째 줄: 열 제목 -->
-<div></div>
-<div style="text-align: center; font-weight: bold;">Recording</div>
-<div style="text-align: center; font-weight: bold;">Emospeech</div>
-<div style="text-align: center; font-weight: bold;">KES-TTS</div>
-
-<!-- 세 번째 줄: Sample 1 오디오 -->
-<div style="display: flex; align-items: center; gap: 40px; margin-left: 60px; margin-top: 10px; flex-wrap: nowrap;">
-  <!-- 텍스트 -->
-  <div style="width: 150px;">
-    Sample 1: <span style="font-style: italic;">“~~~”</span>
+<!-- Sample 1 줄 -->
+<div style="display: flex; align-items: center; gap: 50px; margin-left: 150px; margin-bottom: 20px;">
+  <!-- 한 줄로 고정된 텍스트 -->
+  <div style="width: 150px; white-space: nowrap;">
+    <strong>Sample 1:</strong> <span style="font-style: italic;">“~~~”</span>
   </div>
 
-  <!-- 오디오 1: Recording -->
+  <!-- 오디오 1 -->
   <audio controls style="width: 180px;">
     <source src="Samples/ETTS/Neutral/Sample1/Recording.wav" type="audio/wav">
-    Your browser does not support the audio element.
   </audio>
 
-  <!-- 오디오 2: Emospeech -->
+  <!-- 오디오 2 -->
   <audio controls style="width: 180px;">
     <source src="Samples/ETTS/Neutral/Sample1/Emospeech.wav" type="audio/wav">
   </audio>
 
-  <!-- 오디오 3: Ours -->
+  <!-- 오디오 3 -->
   <audio controls style="width: 180px;">
     <source src="Samples/ETTS/Neutral/Sample1/Ours.wav" type="audio/wav">
   </audio>
