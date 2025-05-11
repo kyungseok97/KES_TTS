@@ -55,31 +55,44 @@ Text-to-Speech (TTS) plays a crucial role in advancing human-computer communicat
     </div>
 
     <div class="container">
+<!-- 타이틀 -->
 <h2 style="text-align: center;">Emotional Speech Synthesis</h2>
 
-<!-- Emotion 라벨 (Recording 위 한 줄) -->
-<div style="margin-left: 150px; font-weight: bold; margin-bottom: 5px;">
+<!-- 감정 레이블 -->
+<div style="margin-left: 150px; font-weight: bold; margin-bottom: 10px;">
   Emotion: Neutral
 </div>
 
-<!-- 열 제목 줄 -->
-<div style="display: flex; gap: 40px; margin-left: 230px; margin-bottom: 10px;">
-  <div style="width: 180px; text-align: center; font-weight: bold;">Recording</div>
-  <div style="width: 180px; text-align: center; font-weight: bold;">Emospeech</div>
-  <div style="width: 180px; text-align: center; font-weight: bold;">KES-TTS</div>
-</div>
-
-<!-- Sample 1: 텍스트 + 오디오 줄 -->
-<div style="display: flex; gap: 40px; align-items: flex-start; margin-left: 150px;">
-  <!-- Sample 텍스트 -->
-  <div style="width: 180px; white-space: nowrap;">
-    <strong>Sample 1:</strong> <span style="font-style: italic;">“~~~”</span>
+<!-- 오디오 열 (텍스트 + 컨트롤러 포함) -->
+<div style="display: flex; gap: 40px; align-items: flex-start; margin-left: 230px; margin-bottom: 10px;">
+  <!-- Recording -->
+  <div style="text-align: center;">
+    <div style="font-weight: bold; margin-bottom: 5px;">Recording</div>
+    <audio controls style="width: 180px;">
+      <source src="Samples/ETTS/Neutral/Sample1/Recording.wav" type="audio/wav">
+    </audio>
   </div>
 
-  <!-- 오디오 플레이어들 -->
-  <div><audio controls style="width: 180px;"><source src="Samples/ETTS/Neutral/Sample1/Recording.wav" type="audio/wav"></audio></div>
-  <div><audio controls style="width: 180px;"><source src="Samples/ETTS/Neutral/Sample1/Emospeech.wav" type="audio/wav"></audio></div>
-  <div><audio controls style="width: 180px;"><source src="Samples/ETTS/Neutral/Sample1/Ours.wav" type="audio/wav"></audio></div>
+  <!-- Emospeech -->
+  <div style="text-align: center;">
+    <div style="font-weight: bold; margin-bottom: 5px;">Emospeech</div>
+    <audio controls style="width: 180px;">
+      <source src="Samples/ETTS/Neutral/Sample1/Emospeech.wav" type="audio/wav">
+    </audio>
+  </div>
+
+  <!-- KES-TTS -->
+  <div style="text-align: center;">
+    <div style="font-weight: bold; margin-bottom: 5px;">KES-TTS</div>
+    <audio controls style="width: 180px;">
+      <source src="Samples/ETTS/Neutral/Sample1/Ours.wav" type="audio/wav">
+    </audio>
+  </div>
+</div>
+
+<!-- Sample 텍스트 (왼쪽 아래 정렬) -->
+<div style="margin-left: 150px;">
+  <strong>Sample 1:</strong> <span style="font-style: italic;">“~~~”</span>
 </div>
       
   </body>
