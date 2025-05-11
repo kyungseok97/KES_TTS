@@ -1,12 +1,65 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Portfolio</title>
-</head>
-<body>
-  <p>test</p>
-</body>
-</html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <style type="text/css">
+      #title {text-align: center; font-family: arial;}
+      #authors {text-align: center; font-style: italic; font-size: 19px; font-family: arial;}
+      #abstract {text-align: center; font-family: arial;}
+      #Audio-Samples {text-align: center; font-family: arial;}
+      #Audio-Samples-detail {text-align: center; font-weight: normal; font-size: 17px; font-family: arial;}
+
+      .container {width: 900px; margin: 30px auto;}
+      .container2 {width: 900px; margin: 30px auto;}
+      .centered {position: relative;display: inline-block; padding: 1em;font-weight: normal;font-size: 17px;font-family: arial;}
+      .sample {text-align: center; font-family: arial;}
+      .container-sample1 {width: 1500px; margin: 5px auto;}
+      .centered-sample1 {position: relative;display: inline-block;padding: 1em;font-weight: normal;font-size: 17px;font-family: arial;}
+      .sample1 {font-style: italic; font-family: arial;}
+      .grey {font-style: italic; font-size: 15px; font-family: arial;}
+    </style>
+  </head>
+
+  <body>
+    <h1 id="title"><br />KES-TTS: A Keyword-Aware, Emotion-Driven, and Speaker-Controllable TTS</h1>
+    <p id="authors">Kyungseok Oh, Rakbeen Song, Chulwon Choi, Bonhwa Ku, and Hanseok Ko</p>
+
+    <h2 id="abstract"><br /><br />Abstract</h2>
+    <div class="container">
+      <div class="centered">
+Text-to-Speech (TTS) plays a crucial role in advancing human-computer communication, enabling more natural and effective interactions across various applications. A key requirement for achieving human-like TTS is the ability to generate emotionally expressive and speaker-controllable speech while appropriately emphasizing keywords within a sentence. However, conventional TTS models often fail to capture word-level prosodic variations and lack mechanisms for automatically detecting linguistically and acoustically significant words, resulting in monotonous and less expressive speech. To address these challenges, we propose KES-TTS, which achieves keyword-aware, emotion-driven, and speaker-controllable speech synthesis by integrating automatic keyword detection using KeyBERT, CLN-based style injection, and word-level emphasis control. This enables more natural, expressive, and contextually adaptive prosody. KES-TTS is evaluated on the Emotional Speech Dataset (ESD) and demonstrates significant improvements in speech naturalness, emotional expressiveness, and speaker similarity through both objective and subjective evaluations. Ablation studies and keyword alignment analyses further validate the effectiveness of the proposed emphasis control and keyword detection strategies, confirming that KES-TTS effectively addresses the challenges of multi-speaker, multi-emotion expressive TTS.
+      </div>
+    </div>
+	  
+    <h3 class="sample"><br /><br />Emotional Voice Conversion Results</h3>
+    <div class="container-sample1">
+      <div class="centered-sample1">
+        <p>1. Neutral to Neutral</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Source</th>
+              <th>Target</th>
+              <th>StarGANv2-VC</th>
+              <th>Emo-StarGAN</th>
+	      <th>Ours</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><audio controls="controls">  <source type="audio/wav" src="Sample/Neutral/1/Source.wav" />&lt;/source&gt; </audio></td>
+              <td><audio controls="controls">  <source type="audio/wav" src="Sample/Neutral/1/Target.wav" />&lt;/source&gt; </audio></td>
+              <td><audio controls="controls">  <source type="audio/wav" src="Sample/Neutral/1/StarGANv2-VC.wav" />&lt;/source&gt; </audio></td>
+              <td><audio controls="controls">  <source type="audio/wav" src="Sample/Neutral/1/Emo-StarGAN.wav" />&lt;/source&gt; </audio></td>
+              <td><audio controls="controls">  <source type="audio/wav" src="Sample/Neutral/1/Ours.wav" />&lt;/source&gt; </audio></td>
+	    </tr>
+	    <tr>
+              <td><audio controls="controls">  <source type="audio/wav" src="Sample/Neutral/2/Source.wav" />&lt;/source&gt; </audio></td>
+              <td><audio controls="controls">  <source type="audio/wav" src="Sample/Neutral/2/Target.wav" />&lt;/source&gt; </audio></td>
+              <td><audio controls="controls">  <source type="audio/wav" src="Sample/Neutral/2/StarGANv2-VC.wav" />&lt;/source&gt; </audio></td>
+              <td><audio controls="controls">  <source type="audio/wav" src="Sample/Neutral/2/Emo-StarGAN.wav" />&lt;/source&gt; </audio></td>
+              <td><audio controls="controls">  <source type="audio/wav" src="Sample/Neutral/2/Ours.wav" />&lt;/source&gt; </audio></td>
+	    </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
