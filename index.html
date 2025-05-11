@@ -59,21 +59,29 @@ Text-to-Speech (TTS) plays a crucial role in advancing human-computer communicat
     
     <!-- 상단 라벨 영역 -->
     <div style="display: flex; align-items: center; margin-left: 60px; gap: 50px; font-weight: bold; margin-bottom: 10px;">
-      <div style="width: 150px;">Neutral</div> <!-- 감정 레이블 왼쪽 정렬 -->
-      <div>Recording</div>
-      <div>Emospeech</div>
-      <div>KES-TTS</div>
-    </div>
-    
-    <!-- Sample 1 영역 -->
-    <div style="display: flex; align-items: center; margin-left: 60px; gap: 50px; margin-bottom: 20px;">
-      <div style="width: 150px;">
-        Sample 1: <span style="font-style: italic;">“~~~”</span>
-      </div>
-      <audio controls style="width: 60px; height: 60px; border-radius: 50%; background-color: #f3f3f3;"></audio>
-      <audio controls style="width: 60px; height: 60px; border-radius: 50%; background-color: #f3f3f3;"></audio>
-      <audio controls style="width: 60px; height: 60px; border-radius: 50%; background-color: #f3f3f3;"></audio>
-    </div>
+<!-- 전체 그리드 -->
+<div style="display: grid; grid-template-columns: 150px 150px 150px 150px; gap: 20px; align-items: center; margin-left: 60px;">
+
+  <!-- 첫 번째 줄: Neutral only -->
+  <div style="font-weight: bold;">Neutral</div>
+  <div></div>
+  <div></div>
+  <div></div>
+
+  <!-- 두 번째 줄: 열 제목 -->
+  <div></div>
+  <div style="text-align: center; font-weight: bold;">Recording</div>
+  <div style="text-align: center; font-weight: bold;">Emospeech</div>
+  <div style="text-align: center; font-weight: bold;">KES-TTS</div>
+
+  <!-- 세 번째 줄: Sample 1 오디오 -->
+  <div>Sample 1: <span style="font-style: italic;">“~~~”</span></div>
+  <audio controls style="width: 60px; height: 60px; border-radius: 50%; background-color: #f3f3f3;"></audio>
+  <audio controls style="width: 60px; height: 60px; border-radius: 50%; background-color: #f3f3f3;"></audio>
+  <audio controls style="width: 60px; height: 60px; border-radius: 50%; background-color: #f3f3f3;"></audio>
+
+</div>
+
       
     </div>
       
