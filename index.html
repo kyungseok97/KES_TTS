@@ -55,19 +55,13 @@ Text-to-Speech (TTS) plays a crucial role in advancing human-computer communicat
     </div>
 
 <div style="text-align: center;">
-
-  <!-- 제목 -->
   <h2>Emotional Speech Synthesis</h2>
 
-  <!-- Emotion -->
   <div style="font-weight: bold; margin-bottom: 20px;">
     Emotion: Neutral
   </div>
 
-  <!-- 열 제목 + 오디오 수직 정렬 -->
   <div style="display: flex; justify-content: center; gap: 60px;">
-
-    <!-- Sample 텍스트 (왼쪽에 위치) -->
     <div style="display: flex; align-items: center; white-space: nowrap; font-weight: bold; margin-right: 10px;">
       Sample 1: <span style="font-weight: normal;">“Mister share man, I move for a division.”</span>
     </div>
@@ -96,6 +90,35 @@ Text-to-Speech (TTS) plays a crucial role in advancing human-computer communicat
       </audio>
     </div>
 
+  <div style="display: flex; justify-content: center; gap: 60px;">
+    <div style="display: flex; align-items: center; white-space: nowrap; font-weight: bold; margin-right: 10px;">
+      Sample 2: <span style="font-weight: normal;">“I thought you meant how old are you?”</span>
+    </div>
+
+    <!-- Recording -->
+    <div style="display: flex; flex-direction: column; align-items: center;">
+      <div style="font-weight: bold; margin-bottom: 5px;">Recording</div>
+      <audio controls style="width: 180px;">
+        <source src="Samples/ETTS/Neutral/Sample2/Recording.wav" type="audio/wav">
+      </audio>
+    </div>
+
+    <!-- Emospeech -->
+    <div style="display: flex; flex-direction: column; align-items: center;">
+      <div style="font-weight: bold; margin-bottom: 5px;">Emospeech</div>
+      <audio controls style="width: 180px;">
+        <source src="Samples/ETTS/Neutral/Sample2/Emospeech.wav" type="audio/wav">
+      </audio>
+    </div>
+
+    <!-- KES-TTS -->
+    <div style="display: flex; flex-direction: column; align-items: center;">
+      <div style="font-weight: bold; margin-bottom: 5px;">KES-TTS</div>
+      <audio controls style="width: 180px;">
+        <source src="Samples/ETTS/Neutral/Sample2/Ours.wav" type="audio/wav">
+      </audio>
+    </div>
+    
   </div>
 
 </div>
